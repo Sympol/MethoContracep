@@ -1,0 +1,707 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MethoContracep</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.theme-1.3.2.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css">
+  
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+  
+		  
+</head>
+<body>
+ 
+<div data-role="page">
+  <div data-role="header">
+    <h1>Bienvenue</h1>
+  </div>
+  <div data-role="content">
+    <p><img src="img/24.jpg" width="100%"><br>
+	 Les grossesses non désirées sont fréquentes en Afrique. Ces grossesses pèsent lourdement sur la santé des femmes et sur leurs familles et représentent un fardeau pour les systèmes sanitaires et le développement social et économique des divers pays d'Afrique.<br>
+	 La presente application a pour but d'evangeliser sur les methodes contraceptives et aussi prevenir la jeune maman des geste utiles pour mieux vivre sa grossesse.
+	</p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+  <div data-role="navbar">
+  <ul>
+	<li><a href="#pop1" data-role="bouton" data-icon="info" >Conseils</a></li>
+	<li><a href="cotefemme.php" data-role="bouton" data-icon="star" >Cote femme</a></li>
+	<li><a href="#pop3" data-role="bouton" data-icon="gear" >Contraception</a></li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+
+
+<!--pop 1-->
+
+<div data-role="page" id="pop1">
+  <div data-role="header">
+    <h1>Conseils</h1>	
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<!--Chapitres -->
+	<ul data-role="listview" data-divider-theme="b" data-inset="true">
+	<li><a href="#cons1" data-icon="info" data-transition="slide" >Ovulation</a></li>
+	<li><a href="#cons2" data-icon="star" data-transition="slide" >Comprendre son cycle menstruel</a></li>
+	<li><a href="#cons7" data-icon="gear" data-transition="slide" >Desir avoir un bebe</a></li>
+	<li><a href="#cons4" data-icon="gear" data-transition="slide" >Tomber enceinte: Ce qu'il faut savoir avant</a></li>
+	<li><a href="#cons6" data-icon="gear" data-transition="slide" >Mieux vivre sa grossesse</a></li>
+	<li><a href="tel:160" data-icon="gear" data-transition="slide" >Info SIDA</a></li>
+  </ul>
+  </div>
+</div>
+
+
+<!--pop 3-->
+
+<div data-role="page" id="pop3">
+  <div data-role="header">
+    <h1>Contraception</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<!--Chapitres -->
+	<ul data-role="listview" data-divider-theme="b" data-inset="true">
+		<li data-theme="e"><a href="#cont6" data-icon="gear" data-transition="slide" >Les methodes naturelles</a></li>
+		<li><a href="#cont1" data-icon="info" data-transition="slide" >L'abstinence périodique</a></li>
+		<li><a href="#cont2" data-icon="star" data-transition="slide" >La méthode des températures </a></li>
+		<li><a href="#cont3" data-icon="gear" data-transition="slide" >L'observation de la glaire cervicale</a></li>
+		<li><a href="#cont4" data-icon="info" data-transition="slide" >Le système avec appareillage</a></li>
+		<li><a href="#cont5" data-icon="star" data-transition="slide" >La méthode MAMA</a></li>
+		<!--Navigation entre les items de la liste view -->
+		<!--Autres methode de contraception -->
+		<li data-theme="e" ><a href="#cont7" data-icon="star" data-transition="slide" >Informations sur les implants</a></li>
+		<li><a href="#cont8" data-icon="star" data-transition="slide" >Les implants contraceptifs</a></li>
+		
+  </ul>
+  </div>
+</div>
+
+
+<!--page 1-->
+
+<div data-role="page" id="page1">
+  <div data-role="header">
+    <h1>L'ovulation</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<!--Chapitres -->
+	<ul data-role="listview" data-divider-theme="b" data-inset="true">
+	<li><a href="#cons1" data-icon="info" data-transition="slide" >Ovulation</a></li>
+	<li><a href="#cons2" data-icon="star" data-transition="slide" >Comprendre son cycle sexuel</a></li>
+	<li><a href="#cons3" data-icon="gear" data-transition="slide" >Etes vous enceinte?</a></li>
+	<li><a href="#cons4" data-icon="gear" data-transition="slide" >Etes vous regulier ou irregulier?</a></li>
+  </ul>
+  </div>
+</div>
+
+<!--page 2-->
+<div data-role="page" id="page2">
+  <div data-role="header">
+    <h1>Page 2</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+  <div data-role="navbar">
+  <ul>
+	<li><a href="#page1" data-role="bouton" data-icon="info">Conseils</a></li>
+	<li><a class="ui-btn-active ui-state-persist" href="#page2" data-role="bouton" data-icon="star">Cote femme</a></li>
+	<li><a href="#page3" data-role="bouton" data-icon="gear">Contraception</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  
+  <!--page 3-->
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <h1>Page 3</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p> page 3 </p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+  <div data-role="navbar">
+  <ul>
+	<li><a href="#page1" data-role="bouton" data-icon="info">Conseils</a></li>
+	<li><a href="#page2" data-role="bouton" data-icon="star">Cote femme</a></li>
+	<li><a class="ui-btn-active ui-state-persist" href="#page3" data-role="bouton" data-icon="gear">Contraception</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  
+  <!--Conseil 1-->
+
+<div data-role="page" id="cons1">
+  <div data-role="header">
+    <h1>L'ovulation</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+    <p>
+		<h3>Comment reconnaitre l’ovulation ?</h3>
+		
+		La température corporelle augmente (prise le matin au 
+		réveil, avant de mettre le pied par terre) de 3 à 5 dixièmes 
+		de degrés.<br> La glaire cervicale devient plus claire, plus fluide et plus 
+		abondante. <br> Des douleurs peuvent apparaitre dans le bas-ventre du 
+		côté de l’ovaire qui libérera l’ovule.<br>
+		<img src="img/14.jpg" width="100%"><br>
+		
+		<h3>Faire un test d’ovulation</h3>
+		Il existe des tests vendus en pharmacie, sous forme de 
+		petites bandelettes imprégnées, qui, au contact de l’urine, 
+		permettent de détecter si vous êtes en période d’ovulation 
+		(détection de la présence de l’hormone LH).<br> Si vous 
+		désirez un bébé, ce “détecteur” vous permet de savoir 
+		avec 90% d’assurance que vous êtes en période de fertilité.<br>
+		<video src="img/test d'ovulation.mp4" controls></video><br>
+		Voir aussi: <br>
+		<a href="#cons2" data-role="bouton" data-icon="star">Comprendre son cycle sexuel</a><br>
+		<a href="#cons4" data-role="bouton" data-icon="star">Connaitre son cycle sexuel</a><br>
+		<a href="#cons3" data-role="bouton" data-icon="star">Etes vous enceinte?</a>
+	</p>
+  </div>
+</div>
+  
+  <!--Conseil 2-->
+<div data-role="page" id="cons2">
+  <div data-role="header">
+    <h1>Conseil</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p>
+  <h3>Comprendre son cycle sexuel</h3>
+  Le cycle féminin commence le 1er jour des règles et se termine le 1er jour des règles suivantes.<br>
+  Ainsi, si le 1er jour des règles est le 2 du mois et que le 1er jour des règles suivantes est le 30 du mois, le cycle est de 28 jours
+  <center><video src="img/Le_cycle_sexuel_de_la_femme.mp4" width="300" controls></video><center>
+  <br></p>
+  </div>
+  </div>
+  
+  
+  <!--Conseil 6-->
+<div data-role="page" id="cons6">
+  <div data-role="header">
+    <h1>Conseil</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p>
+  <h3>Mieux vivre sa grossesse</h3>
+  <img src="img/17.jpg" width="100%">
+  Vous êtes enceinte ! Félicitations. Au-delà du bonheur 
+d’avoir un enfant, vous êtes bien décidée à faire de votre 
+grossesse un moment exceptionnel et harmonieux. 
+Comment adapter votre alimentation ? Quel sport 
+pratiquer ? Comment éviter les vergetures… nous vous donnons les clés pour être belle et zen pendant ces neuf 
+mois inoubliables !
+
+<h3>Bien manger</h3>
+<img src="img/37.jpg" width="100%">
+Bien manger S’il est naturel de céder à quelques envies 
+irrépressibles, bébé ne doit pas justifier tous les excès. Les 
+kilos de la grossesse sont parfois difficiles à perdre… 
+Surveiller votre alimentation est alors primordial. En 
+suivant les conseils, vous aiderez bébé à se 
+construire, et saurez éviter les aliments déconseillés.
+
+
+<h3>Bien vivre sa sexualité</h3>
+<img src="img/24.jpg" width="100%">
+Bien vivre sa sexualité Le corps épanoui, les seins plus
+généreux, la femme enceinte se sent souvent désirable, 
+sexy. Les modifications de son corps déclenchent parfois en 
+elle de vraies pulsions sexuelles. Peut-on faire l'amour sans 
+risque pendant la grossesse ? Comment rassurer le futur 
+papa déstabilisé par le nouveau corps de sa partenaire ? 
+Pour que l'attente d'un enfant ne soit pas synonyme de 
+désert sexuel.
+
+
+<h3>Belle et sportive</h3>
+<img src="img/36.jpg" width="100%">
+Belle et sportive Sauf contre-indications, la grossesse ne 
+doit pas forcément rimer avec inactivité. Avec un peu de 
+bon sens et nos conseils, vous saurez choisir le sport 
+adéquat pour garder la forme. Enfin, pour être belle et 
+rester zen au cours de ces neuf mois, découvrez comment 
+soigner votre peau mise à rude épreuve par l’apparition de 
+vos rondeurs, éviter les jambes lourdes et autres petits 
+désagréments.
+
+
+<h3>Bien dans ma tête</h3>
+<img src="img/9.jpg" width="100%">
+Bien dans ma tête Votre toute nouvelle grossesse vous 
+comble de joie et pourtant quelque chose vient gâcher 
+votre plaisir. Vous êtes anxieuse et hyperémotive, vous 
+faites de drôles de rêves. vous vous sentez un peu dépassée 
+par les évènements. Pas d'inquiétude, la plupart des futures 
+mamans passent par là !
+
+
+<h3>Le suivi mois après mois</h3>
+<img src="img/38.jpg" width="100%">
+9 mois de grossesse Vous êtes enceinte ? Félicitations ! Jour 
+après jour, votre corps change, le petit être qui est en vous 
+grandit… découvrez chaque mois ces 
+étapes de la vie. Sans oublier une partie pratique avec tous 
+vos rendez-vous médicaux et nos conseils pour assurer le 
+suivi de votre grossesse. Un carnet de bord indispensable
+pour toutes les futures mamans… souscrivez au programme
+ <a href="www.mpregnancy.ci">m-Pregnancy</a>.  
+  <br></p>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+   <!--Conseil 4-->
+<div data-role="page" id="cons4">
+  <div data-role="header">
+    <h1>Ce qu'il faut savoir</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p>
+	<h3>Comment tomber enceinte ?</h3>
+
+<img src="img/39.jpg" width="100%">
+Concevoir naturellement un enfant nécessite la réunion de plusieurs conditions essentielles. <br>
+En dehors de ces facteurs clés, plusieurs éléments influencent la fertilité du couple. <br>
+Ceux-ci peuvent soit augmenter le délai de conception, soit empêcher une grossesse. <br>
+<p>
+<b>Conditions préalables</b><br>
+	Rapport(s) sexuel(s) en période d'ovulation<br>
+	Les rapports sexuels vaginaux (en période d'ovulation chez la femme) sont le pré-requis d'une grossesse naturellement provoquée. <br>
+	La fécondation (la rencontre entre un spermatozoïde et un ovule) n'est possible qu'aux alentours du 14e jour du cycle menstruel féminin, 
+	qui correspond à l'expulsion d'un ovule par un des ovaires. 
+</p><br>
+
+<b>A retenir :</b>
+<img src="img/14.jpg" width="100%">
+<p>
+	L'ovulation survient environ <b>14 jours après le premier jour des règles</b> (qui marque le début du cycle menstruel).
+	L'ovulation peut être difficile à prédire : sur un cycle menstruel de 28 jours,  
+	la période de fertilité peut être comprise entre le 8e jour (ovulation précoce) et le 15e jour.<br>
+	Les rapports sexuels réguliers pendant cette période favorisent donc le déclenchement d'une grossesse.
+</p>
+ 
+Malgré le constat précédent, il existe différentes méthodes pour déterminer la période d'ovulation :
+
+<p>
+	<h3>Arrêt de la pilule de la contraception</h3>
+	<img src="img/22.jpg" width="100%">
+	En tant que contraceptif hormonal, la pilule contraceptive a pour effet de bloquer l'ovulation et de mettre en sommeil le cycle menstruel. 
+	L'arrêt de la pilule, ne signifie pas automatiquement que la fécondation est immédiatement possible. <br>
+	Un délai de 8 semaines est généralement nécessaire avant le rétablissement de l'ovulation, sachant que l'attente peut se prolonger de 6 à 12 mois,
+	 chez certaines femmes. <br>
+	En dehors de la pilule, l'arrêt de tout autre moyen contraceptif (implant contraceptif, stérilet) est bien sûr une autre condition sine qua non pour 
+	tomber enceinte. 
+</p>
+
+<b>Liquide pré-éjaculatoire suffisant ?</b>
+
+<p>	Avant l'éjaculation, l'homme sécrète un fluide visqueux appelé « liquide pré-éjaculatoire », qui sert à la lubrification pendant le rapport sexuel. Selon une idée reçue, celui-ci suffirait dans certains cas à provoquer une grossesse, dans le cadre d'un rapport sans éjaculation. Plusieurs études ont montré que le liquide pré-éjaculatoire ne contient pas de spermatozoïdes. Mais une étude récente, réalisée en 2011, tempère ce constat en mettant en évidence une faible concentration de spermatozoïdes chez 41% des sujets testés. 
+	Pour l'heure, le lien entre le liquide pré-éjaculatoire émis lors d'un rapport sexuel (non suivi d'éjaculation) et le début d'une grossesse n'est pas formellement établi. 
+	Facteurs influençant la fertilité.
+</p>
+
+	En dehors d'un tableau pathologique particulier (voir plus bas), plusieurs facteurs ont un incidence sur la fertilité de l'homme, ou de la femme, qui cherchent à concevoir un enfant:
+	<br>
+	
+
+<p>	<b>Age</b><img src="img/9.jpg" width="100%"><br>Chez la femme, la fécondabilité est la plus élevée entre 20 et 25 ans.<br>
+	Celle-ci décline lentement jusqu'à l'âge de 35 ans, puis diminue ensuite rapidement. <br>
+	Le délai de conception peut donc augmenter sensiblement à partir de 30 ans, de même que les risques de grossesse pathologique. 
+</p>
+
+<p> Moins prégnant chez l'homme, l'âge peut devenir un facteur influent à partir de 45 ans (altération des spermatozoïdes) 
+	Tabac et alcool
+</p>
+
+	<b>La consommation du tabac </b><br>
+	La consommation régulière -dans des proportions importants- de tabac et d'alcool influe sur la fertilité du couple.<br>
+
+	Parmi les conséquences observées :<br>
+	<b>Allongement du délai de conception.<br>
+	Diminution de la réserve d'ovaires chez la femme (tabac).<br>
+	Réduction de la quantité et de la qualité des spermatozoïdes (tabac).</b><br>
+
+	<h3>Facteurs environnementaux</h3>
+
+<p> L'exposition répétée à plusieurs facteurs environnementaux (ex : notamment dans l'exercice de certains métiers) a également une incidence sur la fertilité.<br>
+	Parmi les produits nuisibles :<br>
+	Certains solvants libérant des substances volatiles (ex : colle, peinture, cosmétiques, etc.).<br>
+	Métaux lourds.<br>
+	Pesticides et insecticides (concernant notamment les travailleurs agricoles).<br>
+	Les radiations (ex : rayons X).<br>
+	La chaleur (dans certains contextes professionnels : travail en cuisine, boulangerie, etc.).<br>
+</p>
+
+	<h3>Autres facteurs connus</h3>
+
+	<p>Anorexie et obésité chez la femme.<br>
+	Stress (peut causer l'interruption de l'ovulation chez la femme).<br>
+	Infertilité ou stérilité<br>
+	L'infertilité conjugale est généralement établie si la grossesse ne survient pas après deux ans de rapports, en dehors de tout dispositif contraceptif. <p>
+
+	<p>Il est important de consulter un médecin (en couple) pour déterminer les causes de l'infertilité ou de la stérilité. Selon la pathologie diagnostiquée, un traitement peut être envisagé, qui aura pour but d'augmenter les chances de conception. 
+	Stérilité féminine</p>
+
+	Certains facteurs hormonaux ou anomalies physiques peuvent expliquer la difficulté à concevoir naturellement un enfant, 
+	ou à le porter au terme de la grossesse, chez certaines femmes.
+
+	Parmi les principales causes :
+	Troubles de l'ovulation (qui touchent 1/3 des femmes).<br>
+	Atteinte des trompes de Fallope, infertilité dite « tubulaire » (tompes bouchées ou absentes).<br>
+	Facteurs utérins (ex : malformation) et endométriose (formation anormale de tissu en dehors de l'utérus.<br>
+	Facteurs cervicaux (mauvaise qualité de la glaire cervicale).<br>
+	Facteurs immunitaires.
+
+	<h3>Stérilité masculine<h3>
+
+	Plusieurs causes possibles :<br>
+	Production insuffisante de spermatozoïdes.<br>
+	Spermatozoïdes mal formés.<br>
+	Anomalies testiculaires.<br>
+	Causes endocriniennes.<br>
+	Anomalies génétiques.
+
+	<h3>Traitement</h3>
+
+	<b>Chez la femme :</b><br>
+	<b>Traitements hormonaux :</b> stimulation ovarienne en cas de trouble de l'ovulation. Ce type de traitement peut être une étape préalable à la fécondation in vitro (FIV).<br>
+
+	<b>Chez l'homme</b><br>
+	<b>Vitamine C :</b> une supplémentation en vitamine C améliore la qualité du sperme (mobilité) et augmente le nombre de spermatozoïdes.<br>
+
+	<h3>Procréation médicalement assistée</h3>
+
+	<p>Deux techniques envisagées, selon le type de stérilité identifié<br>
+	L'insémination artificielle (en cas de stérilité masculine).<br>
+	La fécondation in vitro (FIV) (stérilité chez la femme ou chez l'homme).</p>
+  </p>
+  </div>
+  </div>
+  
+    <!--Conseil 7-->
+<div data-role="page" id="cons7">
+  <div data-role="header">
+    <h1>Conseil</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p><h3>Desir avoir un bebe?</h3><br>
+		<img src="img/33.jpg" width="100%">
+		  Pour définir le moment favorable à la conception, il est 
+		nécessaire de connaître le fonctionnement du cycle féminin. 
+		Géré par les hormones, le cycle menstruel dure 
+		généralement de 23 à 35 jours.
+
+		<p><h3>1er jour: début du cycle</h3>
+		Le premier jour du cycle correspond au premier jour des 
+		règles, qui durent en principe entre deux et six jours.</p>
+
+		<p><h3>5ème - 14ème jour: maturation de l'ovule</h3>
+		A partir du 5ème jour environ, l’ovaire est le siège de la 
+		formation d’un ovocyte avec cellules annexes, lesquels 
+		constituent ce que l’on appelle un follicule. 14ème jour 
+		environ: ovulation</p>
+
+		<p><img src="img/34.jpg" width="100%">Au milieu du cycle, l'hormone lutéinisante (LH) est libérée 
+		dans l'organisme. Celle-ci a une action sur la maturation de 
+		l’ovocyte et provoque l'ovulation. L'ovule mature est libéré 
+		de l'ovaire et happé par la trompe.  </p>
+
+		<p><h3>14ème - 28ème jour (phase lutéale)</h3>
+		Au cours des jours suivants, l'ovule circule dans la trompe. 
+		Simultanément, la muqueuse utérine se prépare à accueillir 
+		l'ovule fécondé. Si l'ovule n'est pas fécondé, la muqueuse 
+		utérine est rejetée. C'est le début des règles. </p>
+
+		<p>Le cycle menstruel peut varier entre 23 et 35 jours. La 
+		deuxième moitié du cycle, en revanche, dure précisément 
+		14 jours. Les divergences dans la durée des cycles sont dues 
+		aux variations dans la première moitié du cycle. 
+		Rétrospectivement, cela signifie que l'ovulation a en 
+		principe eu lieu deux semaines avant le début des règles.</p> 
+
+		<p><img src="img/35.jpg" width="100%">
+		La femme est fertile au moment de l'ovulation. Il est donc 
+		important d'avoir des rapports sexuels au cours de cette 
+		période si l'on souhaite avoir un enfant. La durée de vie 
+		moyenne des spermatozoïdes est de deux à cinq jours au 
+		maximum; l'ovule n'est toutefois fécondable que pendant 
+		12 à 24 heures. La probabilité d'une grossesse est la plus 
+		élevée si vous avez des rapports sexuels tous les deux jours 
+		entre le 9ème et le 16ème jour de votre cycle. L’outil de 
+		calcul de la date d’ovulation vous permet de calculer 
+		aisément les jours où vous êtes le plus fertile. </p>
+
+		<p><b>Conseil: </b><br>
+		avoir des rapports sexuels tous les 2 ou 3 jours 
+		augmente la probabilité d'une grossesse. En cas 
+		d'éjaculations trop fréquentes, le sperme perd de sa 
+		qualité. C'est pourquoi il est recommandé de faire des 
+		pauses de deux jours au minimum entre les rapports.</p>
+
+		<p>Pour déterminer les jours au cours desquels vous êtes le
+		plus fertile, cliquez simplement <a href="cotefemme.php">ici</a></p>
+	
+  </p>
+  </div>
+  </div>
+ 
+   <!--Cont 1-->
+<div data-role="page" id="cont1">
+  <div data-role="header">
+    <h1>L'abstinance periodique</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <p> 
+  <img src="img/15.jpg" width="100%"><br>
+  La méthode Ogino, du nom du chirurgien japonais qui la proposa, consiste, pour une femme dont le cycle est régulier, à éviter les rapports sexuels non protégés pendant les jours "fertiles" qui précèdent ou suivent l'ovulation.<br>
+  Malheureusement, l'ovulation est imprévisible et peut se produire à n'importe quel moment, même chez les femmes dont le cycle est "régulier" </p>
+  </div>
+  </div>
+  
+     <!--Cont 2-->
+<div data-role="page" id="cont2">
+  <div data-role="header">
+    <h1>La methode de la temperature</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <img src="img/16.jpg" width="100%"><br>
+	  <p>
+	  
+		La température habituelle de la femme s'élève de 0,2 à 0,4 °C (de 36,7 à 37,1 °C, par exemple) au moment de l'ovulation.<br> 
+		Comme l'ovocyte vit seulement vingt-quatre heures, les rapports sexuels non protégés qui ont lieu plus de trois jours après l'élévation de température ne peuvent, en principe, pas entraîner de grossesse.<br>
+		Mais l'ovulation peut avoir lieu n'importe quand. Et si l'on a eu un rapport sexuel les jours qui précédent l'ovulation, les spermatozoïdes qui vivent jusqu'à 5 jours dans l'appareil génital de la femme, peuvent féconder l'ovocyte.
+		Pour déterminer la date de l'ovulation, il faut prendre sa température tous les matins à la même heure, au lit, avant de se lever...
+		<br> Et un simple rhume peut faire monter la température.
+	  </p>
+  </div>
+  </div>
+  
+       <!--Cont 3-->
+<div data-role="page" id="cont3">
+  <div data-role="header">
+    <h1>L'observation de la glaire cervicale</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+  <img src="img/26.jpg" width="100%">
+	  <p>
+		A l'approche de l'ovulation, les sécrétions du col de l'utérus (ou "glaire cervicale") se modifient ; elles deviennent plus abondantes, plus fluides et provoquent un écoulement vaginal (ou "pertes blanches") caractéristique. <br> Mais beaucoup de choses peuvent modifier la glaire et sa consistance : le désir sexuel, le sperme, les infections vaginales... <br>La méthode nécessite d'examiner la glaire avec ses doigts.
+	  </p>
+  </div>
+  </div>
+  
+         <!--Cont 4-->
+<div data-role="page" id="cont4">
+  <div data-role="header">
+    <h1>Le systeme avec appareillage</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<p>
+		Ces systèmes estiment les périodes d’ovulation pour informer sur des périodes dites « à risque » de grossesse.
+	</p>
+	<img src="img/32.jpg" width="100%">
+	<p>
+        Par exemple, avec un mini-lecteur informatisé, on mesure la quantité d'hormones fabriquées par les ovaires au moyen d'une bandelette plongée dans les urines du matin.<br> Le lecteur indique si la journée est "sûre" (lumière verte) ou "à risque" (lumière rouge), c'est-à-dire proche d'une ovulation.<br> Certains de ces systèmes sont  en vente en pharmacie, sur les sites Internet des fabricants et en grande surface. <br> Ils sont coûteux et ne conviennent pas à la contraception des adolescentes. <br> Il existe par ailleurs d'autres tests d'ovulation, mais les préservatifs sont moins chers et plus fiables.
+    </p>
+  </div>
+  </div>
+  
+   <!--Cont 5-->
+<div data-role="page" id="cont5">
+  <div data-role="header">
+    <h1>En savoir d'avantage</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<p align="justified">
+	    <h3>Qu'est-ce que c'est ? Comment ça marche ?</h3>
+		<img src="img/19.jpg" width="100%">
+		La succion du sein par le bébé est perçue par le cerveau (de la mère), qui stimule les seins pour qu'ils produisent du lait au moyen d'une neurohormone, la prolactine.<br>
+		Or, la fabrication de prolactine supprime l'ovulation et empêche les grossesses..</p>
+		
+		<p align="justified"><h3>Quelle est son efficacité ?</h3>
+		<img src="img/21.jpg" width="100%" align="left">
+		Après un accouchement, l'allaitement est donc une contraception très efficace, sous trois conditions :<br>
+		- Le nourrisson doit être exclusivement nourri au sein (jusqu'à cinq ou six fois par jour). La prise d'un biberon doit rester exceptionnelle : si la fréquence de la succion diminue, une ovulation peut se produire.<br>
+		- Le nourrisson doit avoir moins de six mois : au-delà de six mois, allaitement ou pas, une nouvelle ovulation peut se produire.<br>
+		- la femme ne doit pas avoir eu de règles depuis l'accouchement. L’apparition de règles traduit, en effet, la reprise des ovulations.</p><br>
+
+		<p align="justified"><h3>Les autres méthodes de contraception après un accouchement</h3>
+		<img src="img/20.jpg" width="100%" align="left">
+		Beaucoup de femmes désirent donner le sein, mais ne peuvent pas assurer un allaitement au sein exclusif pendant plusieurs mois.<br>
+		L'allaitement est compatible avec plusieurs méthodes sans danger pour la mère et l'enfant pendant l'allaitement : préservatif, pilule microprogestative (à partir de la 3ème semaine), implant (sous condition, à partir de la 4ème semaine après l'accouchement), DIU (" stérilet ") (dans les 48H ou à partir de 4 semaines après l'accouchement).<br>
+		Ces méthodes permettent d'allaiter le bébé pendant le temps que l'on désire sans risque de se retrouver enceinte pendant l'allaitement, ou au moment du sevrage.</p><br> 
+   </div>
+  </div>
+  
+  
+  <!--Cont 6-->
+<div data-role="page" id="cont6">
+  <div data-role="header">
+    <h1>En savoir d'avantage</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<p align="justified">
+	    <p><h3>Quelle est l'efficacité des méthodes naturelles ? Qu'est-ce qui peut la compromettre ?</h3>
+		<img src="img/22.jpg" width="100%">
+		Les méthodes naturelles de connaissance de l’ovulation connaissent jusqu’à 25 % d'échecs.<br>		
+		C'est-à-dire que 25 femmes sur 100 utilisant cette méthode connaissent une grossesse lors de la première année d’utilisation.</p>
+		
+		<p> L’efficacité des méthodes nécessitant un appareillage est propre à chaque système<br>
+		L’utilisation des méthodes naturelles nécessite d’avoir des cycles extrêmement réguliers et de bien connaître son corps. <br>
+		Les périodes d’ovulation peuvent varier en fonction d’éléments extérieurs. 
+		Même lorsque la femme connaît exactement la date de son ovulation (ou pense qu'elle la connaît) les méthodes naturelles sont très imprécises et peu fiables, 
+		car l'ovulation peut être avancée ou reculée par toutes sortes d'événements, à commencer par <b>les émotions</b> !</p><br>
+
+		<p><h3>Quelles sont leurs avantages ?</h3>
+		<img src="img/23.jpg" width="100%">
+		Les méthodes sans appareillage sont gratuites, et ne nécessitent aucun matériel (sauf Persona). <br>
+		Toutes les méthodes naturelles peuvent être associées aux méthodes "barrière" (préservatifs, diaphragme, capes, spermicides).</p><br>
+
+		<p><h3>Quelles sont leurs inconvénients ?</h3>
+		<img src="img/24.jpg" width="100%">
+		Une méthode naturelle peut être parfaitement satisfaisante pour espacer les grossesses si le couple peut se passer de rapports sexuels avec pénétration pendant plusieurs jours.<br>
+		Et si le couple est prêt à accepter une grossesse, même si elle n'était pas prévue (car ces méthodes sont peu fiables).</p><br> 
+
+		<p><h3>Qui peut les utiliser ?</h3>
+		Tout le monde peut utiliser les méthodes naturelles, puisqu'elles ne sont ni invasives, ni dangereuses pour la santé.<br>
+		En dehors des méthodes avec appareillage, ces méthodes sont gratuites. Utilisables quand on n'a aucune autre méthode à disposition.</p> 
+    </p>
+  </div>
+  </div>
+  
+  <!--Cont 7-->
+<div data-role="page" id="cont7">
+  <div data-role="header">
+    <h1>Methode de contraception</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<p align="justified">
+	    <p><h3>Informations sur les implants</h3>
+		<img src="img/29.jpg" width="320">
+		</p>
+		
+		<p>Les implants contraceptifs sous-cutanés sont très efficaces, faciles à utiliser et présentent un faible risque d'effets indésirables.<br>
+		Grâce à ces caractéristiques, ils constituent une bonne méthode de contraception pour les femmes vivant dans des milieux défavorisés. <br>
+		Cependant, les données relatives à la performance des implants contraceptifs comparés aux autres méthodes de contraception sont insuffisantes.</p><br>
+    </p>
+  </div>
+  </div>
+  
+  <!--Cont 8-->
+<div data-role="page" id="cont8">
+  <div data-role="header">
+    <h1>Les contraceptions d'urgence</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+	<p align="justified">
+	    <p><h3>Contraception hormonale d'urgence</h3>
+		</p>
+		
+		<p>La contraception d'urgence est une méthode contraceptive qui peut s'utiliser en urgence afin d'éviter la survenue d'une grossesse.<br>
+		La contraception d'urgence permet d'éviter une situation pouvant être à l'origine d'une grossesse non désirée.<br>
+		Deux méthodes sont proposées : Le DIU au cuivre le stérilet ou la contraception hormonale( la pilule du lendemain)</p><br>
+
+		<p><b>Survenue d'un incident de contraception</b><br>
+		Les circonstances de survenue d'un incident de contraception sont les suivantes :<br>
+		Un manque d'informations sur la contraception<br>
+		Absence de contraception<br>
+		Erreur de contraception<br>
+		Rapport sexuel non protégé<br>
+		Retrait tardif du partenaire<br>
+		Préservatif qui s'est retiré ou déchiré<br>
+		Un oubli de pilule : un rapport sexuel dans la semaine qui précède ou dans la semaine qui suit un oubli de pilule survenu en début de plaquette ;<br>
+		Les oublis pendant les sept premiers jours d'une plaquette sont le plus susceptibles d'entraîner une grossesse. 
+		</p><br>
+
+		<p><h3>Pilule du lendemain</h3>
+		<img src="img/30.jpg" width="100%">
+		<p>La méthode hormonale recommandée est la pilule du lendemain, c'est-à-dire une contraception délivrant uniquement un progestatif. 
+		Elle ne présente aucune contrindication</p>
+
+		<p>Elle est inefficace en cas de grossesse débutante. Cette pilule eut être obtenue sans ordonnance et de manière anonyme en pharmacie <br>
+		Les jeunes filles mineures peuvent obtenir la pilule du lendemain gratuitement et anonymement, dans les pharmacies, <br>
+		les centres de planifications publics, à l'hôpital, ou privés, dans les Planning familiaux, et dans les infirmeries scolaires</p>
+
+		<p>La pilule du lendemain est plus accessible que l'autre méthode, le DIU , car elle peut être obtenue sans ordonnance et de manière anonyme en pharmacie. <br>
+		La contraception d'urgence hormonale n'est pas efficace à 100 %. </p>
+
+		<p>La pilule du lendemain est d'autant plus efficace qu'elle est utilisée plus précocement après le rapport non protégé. <br>
+		Il faut surveiller l'apparition des prochaines règles et faire un test de grossesse et consulter son médecin si un retard supérieur à 5 jours est constaté. <br> 
+		Refuser de délivrer la pilule du lendemain est un acte illégal. <br>
+		Certains médecins conseillent aux femmes et/ou couples qui ont des relations sexuelles avec préservatifs d'acheter une boîte d'avance de cette pilule, et de la ranger avec les préservatifs.</p>
+		
+		<b>Effets secondaires</b>
+
+		<p>Spotting, saignements survenant en dehors des règles, dans les 5 à 10 jours qui suivent la prise de la contraception d'urgence<br>
+		Nausées<br>
+		Vomissements<br>
+		Fatigue<br>
+		Maux de ventre<br>
+		Céphalées<br>
+		Vertiges<br>
+		Tensions mammaires ...</p> 
+
+		<p><h3>DIU au cuivre</h3>
+		<img src="img/31.jpg" width="100%">
+		Méthode la plus efficace lors d'un rapport sexuel non protégé, le DIU est posé lors d'une consultation médicale. <br>
+		Il est possible de poser un DIU jusqu'à 5 jours après la date théorique de l'ovulation <br>
+
+		Il permet d'agir et d'être efficace le plus tardivement. Le DIU peut ensuite devenir la méthode contraceptive.<br>
+		Il est conseillé lorsque le rapport non protégé date de plus de 72 heurs. </p>
+		
+		<p><b>Effets secondaires du DIU</b><br>
+
+		Saignements légers pendant les heures qui suivent la pose
+		Crampes...<br>
+		Infections des trompes, <br>salpingites pouvant provoquer une stérilité</p>
+
+		<h3>Que faire après une contraception d'urgence ?</h3>
+
+		<p>Il est indispensable de consulter son médecin après la prise d'une contraception d'urgence afin de :<br>
+		Choisir une méthode contraceptive, comme par exemple le préservatif, jusqu'à la fin du cycle en cours<br>
+		D'effectuer un test de grossesse si les règles ne surviennent pas dans les 5 à 7 jours après la date attendue<br>
+		De réévaluer la méthode contraceptive qu'il est nécessaire de prendre<br>
+		D'obtenir le maximum d'informations sur les méthodes contraceptives<br>
+
+		Une femme qui oublie trop souvent sa pilule doit envisager une autre méthode (DIU, anneau, patch, implant..) <br>
+
+		Une méthode contraceptive d'urgence ne peut en aucun cas constituer une contraception au long cours car elle présente de nombreux effets secondaires.<br> 
+		Son utilisation fréquente expose à un risque de grossesse. 
+		</p> 
+    </p>
+  </div>
+  </div>
+ 
+</body>
+</html>
