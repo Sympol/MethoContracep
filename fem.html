@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MethoContracep</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.theme-1.3.2.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css">
+  
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+   <script language="JavaScript">
+// This script is free to view and use on the C Point website. Copying, modifying or using this script elsewhere is strictly prohibited
+// without the written authorization from C Point Pty Ltd. To contact us, please visit  http://www.c-point.com/feedback.htm
+function ovulation_date() 
+{
+// Get input values	
+	var d = parseInt(document.getElementById('day').value);
+	var m = parseInt(document.getElementById('month').value);
+	var y = parseInt(document.getElementById('year').value);
+	var c = parseInt(document.getElementById('cycle').value);
+
+// Get the start of the ovulation    
+    var starto = new Date();
+	
+	starto.setYear(y);
+	starto.setMonth(m-1);	
+	starto.setDate(d);
+	var daymsecs = 60*60*24*1000;
+	starto.setTime(starto.getTime() + ((c * daymsecs) - daymsecs*14));
+
+	y = starto.getYear()+1900;
+	if ((y > 100) && (y <1900)) y+=1900;
+	if (y == 3900) y = 2000;
+	m = starto.getMonth()+1;
+	d = starto.getDate();
+	
+// Report the result	
+	document.getElementById('result').value = "" + d + "/" + m + "/" + y;
+	
+	starto.setTime(starto.getTime() - daymsecs*3);
+	y = starto.getYear()+1900;
+	if ((y > 100) && (y <1900)) y+=1900;
+	if (y == 3900) y = 2000;
+	m = starto.getMonth()+1;
+	d = starto.getDate();
+	var fertilespan = "" + d + "/" + m + "/" + y + " au ";	
+	starto.setTime(starto.getTime() + daymsecs*5);
+	y = starto.getYear()+1900;
+	if ((y > 100) && (y <1900)) y+=1900;
+	if (y == 3900) y = 2000;
+	m = starto.getMonth()+1;
+	d = starto.getDate();
+	fertilespan += "" + d + "/" + m + "/" + y;	
+	
+	document.getElementById('fertile').value = fertilespan;
+}
+
+
+
+</script>
+</head>
+<body>
+<!--page 2-->
+<div data-role="page" id="page2">
+  <div data-role="header">
+    <h1>Periode rouge</h1>
+	<a data-rel="back" data-icon="back">Retour</a>
+  </div>
+  <div data-role="content">
+ 
+	
+      <form name="calculator">
+	  <table width="500" border="0" align="center" cellpadding="4" cellspacing="2" class="border">        
+        <tr bgcolor="#F2F7FB">
+          <th colspan="2" scope="row"><p class="normal">Veuillez selectionnez la date de vos dernieres regles</p></th>
+        </tr>
+        <tr bgcolor="#F2F7FB">
+          <th colspan="2" scope="row"><select id='month'>
+            <option value=1>Janvier
+            <option value=2>Fevrier
+            <option value=3>Mars
+            <option value=4>Avril
+            <option value=5>Mai
+            <option value=6>Juin
+            <option value=7>Juillet
+            <option value=8>Aout
+            <option value=9>Septembre
+            <option value=10>Octobre
+            <option value=11>Novembre
+            <option value=12>Decembre
+          </select>&nbsp;
+             <select id='day'>
+              <option value=1>1
+              <option value=2>2
+              <option value=3>3
+              <option value=4>4
+              <option value=5>5
+              <option value=6>6
+              <option value=7>7
+              <option value=8>8
+              <option value=9>9
+              <option value=10>10
+              <option value=11>11
+              <option value=12>12
+              <option value=13>13
+              <option value=14>14
+              <option value=15>15
+              <option value=16>16
+              <option value=17>17
+              <option value=18>18
+              <option value=19>19
+              <option value=20>20
+              <option value=21>21
+              <option value=22>22
+              <option value=23>23
+              <option value=24>24
+              <option value=25>25
+              <option value=26>26
+              <option value=27>27
+              <option value=28>28
+              <option value=29>29
+              <option value=30>30
+              <option value=31>31
+            </select>&nbsp;
+              <select id='year'>
+               <option value=113 selected>2013
+               <option value=114>2014
+               <option value=115>2015
+               <option value=116>2016
+               <option value=117>2017
+               <option value=118>2018
+            </select></th>
+        </tr>
+        <tr bgcolor="#F2F7FB">
+          <th scope="row">Combien de jours dure votre cycle menstruel?</th>
+          <td><input type="input" id='cycle' value=28></td>
+        </tr>
+        <tr bgcolor="#F2F7FB">
+          <th colspan="2" scope="row"><input type="button" value="Calculate" onClick="ovulation_date()"></th>
+          </tr>
+        <tr bgcolor="#ECE9D8">
+          <th scope="row">Votre prochain ovulation est le: </th>
+          <td><input type="text" id='result' style="BACKGROUND-COLOR: #ECE9D8" size="24"></td>
+        </tr>
+        <tr bgcolor="#ECE9D8">
+          <th scope="row">votre période rouge est </th>
+          <td><input type="text" id='fertile' style="BACKGROUND-COLOR: #ECE9D8" size="24"></td>
+        </tr>
+      </table>            
+      </form>   </script>
+
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+  <div data-role="navbar">
+  <ul>
+	<li><a href="index.html" data-role="bouton" data-icon="info">Home</a></li>
+	<li><a class="ui-btn-active ui-state-persist" href="#page2" data-role="bouton" data-icon="star">Cote femme</a></li>
+  </div>
+  </div>
+  </div>
+  </body>
+  </html>
